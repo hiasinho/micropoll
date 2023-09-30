@@ -6,20 +6,50 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate:types": "npx supabase gen types typescript --project-id adfhzseqyyghdrwkweuq > src/lib/database.types.ts"
   },
   "dependencies": {
+    "@ably-labs/react-hooks": "^2.1.1",
+    "@clerk/nextjs": "^4.25.1",
+    "@prisma/client": "^5.3.1",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@supabase/auth-helpers-nextjs": "^0.8.1",
+    "@supabase/supabase-js": "^2.36.0",
     "@types/node": "20.6.3",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "ably": "^1.2.44",
     "autoprefixer": "10.4.16",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.2",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "lucide-react": "^0.279.0",
+    "nanoid": "^5.0.1",
     "next": "13.5.2",
     "postcss": "8.4.30",
+    "prettier": "^3.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "redis": "^4.6.10",
+    "tailwind-merge": "^1.14.0",
     "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "5.2.2",
+    "unique-names-generator": "^4.7.1",
+    "uuid": "^9.0.1",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.3.1",
+    "supabase": "^1.99.5"
   }
 }
